@@ -1,0 +1,176 @@
+:root {
+  --bg-color: #F8F5F2;         
+  --primary-color: #1C2A3A;    
+  --secondary-color: #4DA8DA;  
+  --auxilliary-color: #E3B23C;     
+
+  --card-color: #FFFFFF;
+  --text-color: #2B2B2B;
+  --muted-text: #7A7A7A;
+  --border-color: #E6E2DD;
+
+  --padding-horizontal: 100px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+nav {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px var(--padding-horizontal);
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+nav a:hover {
+  color: var(--auxilliary-color);
+}
+
+.logo {
+  display: flex;
+  width: 20px;
+  min-height: 35px;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+#profileSection {
+  display: flex;
+  gap: 40px;
+  padding: 80px var(--padding-horizontal);
+  align-items: center;
+}
+
+#profileSection img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#profileSection h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+#profileSection p {
+  color: var(--muted-text);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+#profileSection button {
+  margin-top: 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#profileSection button:hover {
+  background-color: var(--auxilliary-color);
+}
+
+#travelBoard {
+  padding: 60px var(--padding-horizontal);
+  text-align: center;
+}
+
+#travelBoard h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+#travelBoard p {
+  color: var(--muted-text);
+}
+
+.Trip {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--card-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-top: 16px;
+}
+
+.card p {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.card button {
+  margin-top: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --padding-horizontal: 40px;
+  }
+
+  .Trip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
