@@ -1,4 +1,4 @@
-.root {
+:root {
   --bg-color: #F8F5F2;         
   --primary-color: #1C2A3A;    
   --secondary-color: #4DA8DA;  
@@ -47,13 +47,14 @@ nav a:hover {
 }
 
 .logo {
+  
   display: flex;
   width: 20px;
   min-height: 35px;
   align-items: center;
   gap: 10px;
 }
-.logo img {
+.logo>img{
   width: 28px;
   height: 28px;
   object-fit: contain;
@@ -101,6 +102,7 @@ nav a:hover {
 }
 
 #travelBoard {
+  margin-top: 10px;
   padding: 60px var(--padding-horizontal);
   text-align: center;
 }
@@ -108,9 +110,11 @@ nav a:hover {
 #travelBoard h1 {
   color: var(--primary-color);
   font-size: 2rem;
+  margin-bottom: 2px;
 }
 
 #travelBoard p {
+  margin-top: 0px;
   color: var(--muted-text);
 }
 
@@ -125,8 +129,11 @@ nav a:hover {
   background-color: var(--card-color);
   border-radius: var(--radius-lg);
   padding: 20px;
+  height: 450px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -141,17 +148,22 @@ nav a:hover {
 }
 
 .card h3 {
+  font-size: large;
   color: var(--primary-color);
-  margin-top: 16px;
+  margin-top: auto;
 }
 
 .card p {
   color: var(--muted-text);
-  font-size: 0.9rem;
+  font-size: medium;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;   /* max 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card button {
-  margin-top: 16px;
+  margin-top: auto;
   background-color: var(--primary-color);
   color: white;
   border: none;
