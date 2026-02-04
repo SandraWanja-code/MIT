@@ -186,3 +186,19 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+#contactsection{
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  height: 60vh;
+}
+#contactsection>form{
+padding: 24px;
+background-color: var(--secondary-color);
+border-radius: 30px;
+width: 60vw;
+}
+#contactsection>form>div{
+  margin-top: 16px;
+}
+
+
