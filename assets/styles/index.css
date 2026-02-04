@@ -192,8 +192,9 @@ nav a:hover {
   height: 60vh;
 }
 #contactsection>form{
+  color: var(--auxilliary-color);
 padding: 24px;
-background-color: var(--secondary-color);
+background-color: var(--primary-color);
 border-radius: 30px;
 width: 60vw;
 }
