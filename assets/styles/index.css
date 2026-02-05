@@ -189,17 +189,106 @@ nav a:hover {
 #contactsection{
   padding-left: var(--padding-horizontal);
   padding-right: var(--padding-horizontal);
+  padding-top:40px ;
+  padding-bottom: 40px;
   height: 60vh;
+}
+#contactsection>form>h2{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+
 }
 #contactsection>form{
   color: var(--auxilliary-color);
 padding: 24px;
 background-color: var(--primary-color);
 border-radius: 30px;
-width: 60vw;
+width: 70vw;
+margin: auto;
 }
 #contactsection>form>div{
   margin-top: 16px;
+  padding-left: 12px;
+   padding-right: 12px;
+   /* display: grid; */
+}
+#contactsection>form>div>div{
+  margin-top: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+width: 30vw;
+}
+
+#contactsection>form>.userNameEmail, .userAgeBirthday, .userFileMessage{
+  display: flex ; 
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+#contactsection>form>.userNameEmail, .userAgeBirthday, .userFileMessage>div>label{
+
+  display: flex;
+gap:20px ;
+}
+ 
+ #contactsection>form> .userFileMessage>div>label{
+  display: flex;
+  
+ }
+
+#contactsection>form>div>label{
+font-weight: 500;
+ margin-bottom: 6px;
+}
+
+#contactsection>form>div>input{
+all:unset;
+display: block;
+border-radius: 10px;
+width: 25vw;
+background-color: #FFFFFF;
+padding:10px 16px ;
+font-size: 15px;
+box-sizing: border-box; 
+}
+#contactsection>form>div>textarea{
+ all:unset;
+display: block;
+border-radius: 10px;
+width: 25vw;
+background-color: #FFFFFF;
+padding:10px 16px ;
+font-size: 15px;
+box-sizing: border-box; 
+}
+ 
+#contactsection>form>button{
+   display: block;
+  margin: 30px auto 0;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 14px 46px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+#contactsection>form>button:hover{
+  background-color: var(--auxilliary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 
